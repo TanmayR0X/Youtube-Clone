@@ -64,16 +64,14 @@ const App = () => {
       <Header onMenuClick={toggleSidebar} />
       <div className="flex">
         {/* Sidebar component */}
-        <Sidebar isOpen={isSidebarOpen} CloseSidebar={closeSidebarOnMobile} />
+        <Sidebar  isOpen={isSidebarOpen} CloseSidebar={closeSidebarOnMobile} />
         <main
           className={`flex-grow p-4 ${
             isSidebarOpen
-              ? isWatch || isResult
                 ? "sm:ml-56"
-                : "ml-56"
               : isWatch || isResult
               ? "ml-0"
-              : "ml-20"
+              : "sm:ml-20"
           }`}
         >
           <Suspense fallback={<LoadingFallback/>}>
