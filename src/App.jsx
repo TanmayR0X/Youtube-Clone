@@ -33,7 +33,7 @@ const SearchResultPage = lazy(() => import("./pages/SearchResultPage"));
 const FakeRoute = lazy(() => import("./components/FakeRoute"));
 
 const App = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const closeSidebarOnMobile = () => {
     // Check if the screen width is less than Tailwind's 'sm' breakpoint (640px)
