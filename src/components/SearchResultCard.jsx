@@ -12,7 +12,7 @@ const SearchResultCard = ({video}) => {
   return (
        <Link to={`/watch?v=${videoId}`} className="flex flex-col sm:flex-row gap-4 cursor-pointer">
       {/* Thumbnail */}
-      <div className=" sm:w-64 md:w-80 flex-shrink-0">
+      <div className=" sm:w-64 md:w-80 w-fit">
         <img
           src={thumbnailUrl}
           alt={title}
