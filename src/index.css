@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@layer components {
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  .font-roboto{
+     font-family: "Roboto", sans-serif;
+  }
+}
+
+body{
+  overflow-y: scroll;
+  background-color: #18181b;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Make the track background invisible */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #555; /* The color of the draggable scroll handle */
+  border-radius: 20px; /* Fully rounded corners on the thumb */
+  border: 3px solid transparent; /* Creates padding around the thumb */
+  background-clip: content-box; /* Ensures the border is not covered by the background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
