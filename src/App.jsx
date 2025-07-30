@@ -50,9 +50,11 @@ const App = () => {
   };
 
   const LoadingFallback = () => {
-    <div className="flex justify-center items-center h-full">
+   return (
+      <div className="flex justify-center items-center h-full">
       <p>Loading page...</p>
     </div>
+   );
   }
 
   const location = useLocation();
