@@ -22,7 +22,7 @@ User Interface
 
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-30 133030" src="https://github.com/user-attachments/assets/60ecc25d-944e-4db2-a187-5de611055d04" />
-
+ 
 ---
  On Mobile
 
