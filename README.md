@@ -48,5 +48,5 @@ Technologies Used
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/youtube-clone.git
+git clone https://github.com/TanmayR0X/youtube-clone.git
 cd youtube-clone
