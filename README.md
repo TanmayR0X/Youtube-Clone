@@ -1,12 +1,53 @@
-# React + Vite
+# 📺 YouTube Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, feature-rich clone of YouTube built with React.js, Tailwind CSS, Redux Toolkit, RTK Query, and the official YouTube Data API. Search and watch videos and enjoy a smooth user experience — just like the real thing!
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Features
 
-## Expanding the ESLint configuration
+-  Real-time video search using YouTube Data API
+-  Video playback with related video suggestions
+-  Channel pages with full video lists
+-  Fully responsive design for desktop and mobile
+-  State management with Redux Toolkit
+-  API handling with RTK Query
+-  Smooth navigation with React Router
+-  Tailwind CSS for fast and modern styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+User Interface
+
+ On Laptop/Desktop
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-07-30 133030" src="https://github.com/user-attachments/assets/60ecc25d-944e-4db2-a187-5de611055d04" />
+
+---
+ On Mobile
+
+<img width="1920" height="1080" alt="Screenshot 2025-07-30 133016" src="https://github.com/user-attachments/assets/748eaeae-57c7-4eb8-98d7-d6dd7022e7c4" />
+
+
+---
+
+Technologies Used
+
+| Tech               | Purpose                         |
+|--------------------|----------------------------------|
+| **React.js**        | Component-based frontend         |
+| **Tailwind CSS**    | Utility-first styling            |
+| **React Router DOM**| Routing and navigation           |
+| **Redux Toolkit**   | Global state management          |
+| **RTK Query**       | Efficient data fetching layer    |
+| **YouTube Data API**| Real video data and search       |
+
+---
+
+## 📂 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/youtube-clone.git
+cd youtube-clone
