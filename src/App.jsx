@@ -68,7 +68,7 @@ const App = () => {
         <main
           className={`flex-grow p-4 ${
             isSidebarOpen
-                ? "sm:ml-56"
+                ? "md:ml-56"
               : isWatch || isResult
               ? "ml-0"
               : "sm:ml-20"

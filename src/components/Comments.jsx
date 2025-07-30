@@ -29,7 +29,7 @@ function Comment({ comment }) {
   } = comment.snippet.topLevelComment.snippet;
 
   return (
-    <div className="flex gap-3 ">
+    <div className="flex gap-3">
       <img src={authorProfileImageUrl} alt={authorDisplayName} className="w-10 h-10 rounded-full" />
       <div className="flex flex-col">
         <div className="flex items-center gap-2">

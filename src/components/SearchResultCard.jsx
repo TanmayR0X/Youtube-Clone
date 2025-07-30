@@ -8,9 +8,9 @@ const SearchResultCard = ({video}) => {
   const thumbnailUrl = video?.snippet?.thumbnails?.medium?.url;
   if(!videoId) return null;
   return (
-       <Link to={`/watch?v=${videoId}`} className="flex flex-col sm:flex-row gap-4 cursor-pointer">
+       <Link to={`/watch?v=${videoId}`} className="flex flex-col sm:flex-row gap-4 cursor-pointer ">
       {/* Thumbnail */}
-      <div className=" sm:w-64 md:w-80 w-fit">
+      <div className=" sm:w-64 md:w-80">
         <img
           src={thumbnailUrl}
           alt={title}
@@ -19,7 +19,7 @@ const SearchResultCard = ({video}) => {
       </div>
       {/* Details */}
       <div className="flex flex-col">
-        <h3 className="text-lg font-semibold line-clamp-2">{title}</h3>
+        <h3 className="max-sm:text-sm font-semibold line-clamp-2">{title}</h3>
         <p className="text-sm text-neutral-400 mt-2">{channelTitle}</p>
         <p className="hidden md:block text-sm text-neutral-400 mt-2 line-clamp-2">
           {description}

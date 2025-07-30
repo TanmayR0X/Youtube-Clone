@@ -89,12 +89,12 @@ export default function Sidebar({ isOpen, CloseSidebar }) {
 
       {/* Main Sidebar Container */}
       <aside
-        className={`custom-scrollbar bg-zinc-900 text-white overflow-x-hidden fixed top-16 left-0 h-[calc(100vh-4rem)] overflow-y-auto py-2 mt-2 z-50 transition-all duration-300
+        className={`custom-scrollbar bg-zinc-900 text-white overflow-x-hidden fixed top-16 left-0 h-[calc(100vh-4rem)] overflow-y-auto py-2 mt-2 z-50 max-sm:h-screen
           ${
             isOpen
-              ? "w-56 translate-x-0" // 
+              ? "w-56 translate-x-0 " // 
               : `
-                  -translate-x-full sm:translate-x-0 
+                  -translate-x-full sm:translate-x-0  
                   ${isWatch || isResult ? "sm:w-0" : "sm:w-20"}
                   w-56 
                 `
@@ -103,7 +103,7 @@ export default function Sidebar({ isOpen, CloseSidebar }) {
       >
         {isOpen ? (
           //  EXPANDED SIDEBAR VIEW (when isOpen is true)
-          <nav className="flex flex-col gap-1 p-2 ">
+          <nav className="flex flex-col gap-1 p-2">
             <FullSidebarItem
               icon={<IoHomeOutline size={20} />}
               text="Home"

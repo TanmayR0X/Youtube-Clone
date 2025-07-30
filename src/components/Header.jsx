@@ -42,6 +42,14 @@ export default function Header({ onMenuClick }) {
     };
   }, []);
 
+  const handleMobileSearch = () => {
+    if(showMobileSearch == true) {
+      setTimeout(() => {
+        setShowMobileSearch(false) ;
+      }, 1000);
+    }
+  }
+
   return (
     <header className="flex justify-between items-center p-4 bg-zinc-900 text-white sticky top-0 z-50 flex-grow flex-shrink-0">
       {showMobileSearch ? (
@@ -68,7 +76,7 @@ export default function Header({ onMenuClick }) {
               autoFocus
             />
             <Tooltip text="Search">
-              <button type="submit" className="bg-neutral-700 border border-neutral-600 border-l-0 rounded-r-full px-6 hover:bg-neutral-600 focus:outline-none cursor-pointer">
+              <button type="submit" onClick={handleMobileSearch} className="bg-neutral-700 border border-neutral-600 border-l-0 rounded-r-full px-6 hover:bg-neutral-600 focus:outline-none cursor-pointer">
                 <IoIosSearch size={26} />
               </button>
             </Tooltip>

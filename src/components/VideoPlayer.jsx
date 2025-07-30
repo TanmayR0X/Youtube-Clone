@@ -8,16 +8,14 @@ const VideoPlayer = ({ videoId }) => {
   }
   const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
   return  (
-    <div className="aspect-video">
+    <div className="aspect-video ">
       <iframe 
-      width="100%"
-      height="100%"
       src={embedUrl}
       title="Youtube Video Player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-      className="rounded-xl"
+      className="rounded-xl w-full h-full"
       ></iframe>
     </div>
   )

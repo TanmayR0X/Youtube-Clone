@@ -26,7 +26,7 @@ export default function WatchPage() {
   }
 
   if (isVideoError || areRelatedError) {
-    return <div className="text-red-500">Error loading video data.</div>;
+    return <div className="text-red-500 text-center text-wrap">Error loading video data.</div>;
   }
 
   const video = videoData?.items?.[0];
