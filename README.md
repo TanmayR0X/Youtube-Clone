@@ -6,7 +6,7 @@ A responsive, feature-rich clone of YouTube built with React.js, Tailwind CSS, R
  Features
 
 -  Real-time video search using YouTube Data API
--  Video playback with related video suggestions
+-  Related video suggestions
 -  Fully responsive design for desktop and mobile
 -  State management with Redux Toolkit
 -  API handling with RTK Query
